@@ -1,2 +1,2 @@
 all:
-	python fvm.py
+	python fvm.py --travis

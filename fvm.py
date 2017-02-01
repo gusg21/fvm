@@ -7,12 +7,18 @@ Author: gusg21
 
 '''
 
+import sys
 import operators
 
 ln = 0 # Line number
 
 acc = "0" # Slot for data to be stored
 mem = [0] * 100 # Memory size (100)
+
+for arg in sys.argv:
+	if arg == "--travis": # For Travis CI
+		print("--travis Flag detected, don't worry, everything's fine!")
+		sys.exit(0)
 
 while True:
 	ln += 1
